@@ -10,6 +10,7 @@ export const HONESTY =
   "Heuristic scorecard only. VidIQ and SocialBlade estimates are not AdSense. YouTube may limit inauthentic or mass-produced content.";
 
 export const SIBLING_TOOLS = [
+  { href: "https://pitch-roast.vercel.app", label: "Pitch Roast" },
   { href: "https://fund-fix-flee.vercel.app", label: "Founder Scorecard" },
   { href: "https://japan-trip-brain.vercel.app", label: "Japan Trip Brain" },
   { href: "https://hotel-ota-calculator.vercel.app", label: "Hotel OTA Calculator" },

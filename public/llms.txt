@@ -20,12 +20,13 @@ Free JSON API. No key, no signup, CORS open. Every endpoint takes GET query para
   HIGH / MED / LOW reality check with signals and myths (see /openapi.json for the allowed values)
 - OpenAPI 3.1 spec: https://faceless-yt-risk-check.vercel.app/openapi.json
 - Plugin manifest: https://faceless-yt-risk-check.vercel.app/.well-known/ai-plugin.json
-- MCP (remote, streamable HTTP, no auth), with this and 8 sibling tools: https://free-agent-tools.vercel.app/mcp
+- MCP (remote, streamable HTTP, no auth), with this and 9 sibling tools: https://free-agent-tools.vercel.app/mcp
 
 ## Disclaimer
 Not financial or legal advice. Educational only. Not a YouTube farm tutorial and not a revenue forecast. VidIQ and SocialBlade estimates are not AdSense. Not affiliated with YouTube or Google.
 
 ## Other free tools by the same maker
+- Pitch Roast: https://pitch-roast.vercel.app
 - Founder Scorecard: https://fund-fix-flee.vercel.app
 - Japan Trip Brain: https://japan-trip-brain.vercel.app
 - Hotel OTA Commission Calculator: https://hotel-ota-calculator.vercel.app
