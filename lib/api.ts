@@ -1,8 +1,8 @@
 import { scoreQuiz, summarizeScore, type QuizAnswers } from "./score";
 import { oneOf, type Endpoint } from "./agent-api";
-import { DISCLAIMER_SHORT, HONESTY, SITE_NAME, SITE_TAGLINE } from "./site";
+import { DISCLAIMER_SHORT, HONESTY, PUBLIC_URL, SITE_NAME, SITE_TAGLINE } from "./site";
 
-export const PUBLIC_URL = "https://faceless-yt-risk-check.vercel.app";
+export { PUBLIC_URL };
 export const API_DISCLAIMER = `${DISCLAIMER_SHORT} ${HONESTY}`;
 export const API_INFO = { title: `${SITE_NAME} API`, description: SITE_TAGLINE };
 
