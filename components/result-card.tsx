@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { CardDisclaimer } from "@/components/card-disclaimer";
-import { summarizeScore, type ScoreResult } from "@/lib/score";
+import { ShareBar } from "@/components/share-bar";
+import { summarizeScore, type QuizAnswers, type ScoreResult } from "@/lib/score";
+import { PUBLIC_URL, resultHeadline, resultPath } from "@/lib/share";
 
 const levelClass: Record<ScoreResult["level"], string> = {
   HIGH: "text-rose-300",
@@ -10,8 +12,17 @@ const levelClass: Record<ScoreResult["level"], string> = {
   LOW: "text-teal-200",
 };
 
-export function ResultCard({ result }: { result: ScoreResult }) {
+export function ResultCard({
+  result,
+  answers,
+  shared = false,
+}: {
+  result: ScoreResult;
+  answers?: QuizAnswers;
+  shared?: boolean;
+}) {
   const [copied, setCopied] = useState(false);
+  const path = answers ? resultPath(answers) : null;
 
   async function copySummary() {
     try {
@@ -91,6 +102,21 @@ export function ResultCard({ result }: { result: ScoreResult }) {
           Screenshot-friendly card. No account data, no fake earnings chart.
         </p>
       </div>
+      {answers && path ? (
+        <div className="mt-4 rounded-2xl border border-white/10 bg-black/25 px-4 py-4" data-testid="share-result">
+          <p className="text-xs leading-relaxed text-muted">
+            Share this result. The link carries only your seven quiz answers, nothing else, and nothing is stored.
+          </p>
+          <div className="mt-3 flex flex-wrap items-center gap-2">
+            <ShareBar url={`${PUBLIC_URL}${path}`} text={`${resultHeadline(answers, result)}. Free reality check:`} />
+            {shared ? null : (
+              <a href={path} className="text-sm text-muted underline underline-offset-2 hover:text-foreground">
+                Open result page
+              </a>
+            )}
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 }

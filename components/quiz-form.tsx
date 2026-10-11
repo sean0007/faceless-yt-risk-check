@@ -118,6 +118,7 @@ const blank: QuizAnswers = {
 export function QuizForm() {
   const [answers, setAnswers] = useState<QuizAnswers>(blank);
   const [result, setResult] = useState<ScoreResult | null>(null);
+  const [scored, setScored] = useState<QuizAnswers | null>(null);
 
   const answeredCount = useMemo(() => questions.length, []);
 
@@ -127,6 +128,7 @@ export function QuizForm() {
 
   function run(next: QuizAnswers) {
     setResult(scoreQuiz(next));
+    setScored(next);
   }
 
   return (
@@ -205,7 +207,7 @@ export function QuizForm() {
         </p>
       </div>
 
-      <div aria-live="polite">{result ? <ResultCard result={result} /> : null}</div>
+      <div aria-live="polite">{result ? <ResultCard result={result} answers={scored ?? undefined} /> : null}</div>
     </div>
   );
 }

@@ -65,14 +65,14 @@ const LEVEL_COPY: Record<
   },
 };
 
-type Factor = {
+export type Factor = {
   id: string;
   weight: number;
   raise: boolean;
   bullet: string;
 };
 
-function factorsFor(answers: QuizAnswers): Factor[] {
+export function factorsFor(answers: QuizAnswers): Factor[] {
   const factors: Factor[] = [];
 
   if (answers.visual === "ai_slideshow") {
