@@ -5,9 +5,9 @@ import { SponsorSlot } from "@/components/sponsor-slot";
 import { RATE_LIMIT } from "@/lib/agent-api";
 import { DISCLAIMER_SHORT, HONESTY, PUBLIC_URL, SITE_NAME } from "@/lib/site";
 
-const title = "Do faceless AI YouTube channels get demonetized? Free reality-check quiz";
+const title = "Is a faceless YouTube channel still worth it in 2026? Free risk check (demonetization + expectations)";
 const description =
-  "Free quiz that reality-checks faceless and AI YouTube channel plans. Answer seven questions about visuals, voice, scripts, YPP timing, estimates, timeline, and niche. Get a HIGH / MED / LOW expectation and monetization-risk card. No login.";
+  "Is a faceless YouTube channel still worth it in 2026? Free risk check quiz that reality-checks faceless and AI YouTube channel plans. Answer seven questions about visuals, voice, scripts, YPP timing, estimates, timeline, and niche. Get a HIGH / MED / LOW expectation and monetization-risk card. No login.";
 
 export const metadata: Metadata = {
   title: { absolute: `${title} · ${SITE_NAME}` },
@@ -56,6 +56,14 @@ const levels = [
 const apiExample = `${PUBLIC_URL}/api/score?visual=ai_slideshow&voiceover=ai_voice&scripts=identical_template&revenueTiming=before_ypp&estimates=as_income&timeline=ten_k_fast&niche=broad_storytime`;
 
 const faq: FaqItem[] = [
+  {
+    q: "Is a faceless YouTube channel still worth it in 2026?",
+    a: "It can be, but not as the passive-income shortcut viral posts sell. YouTube can limit or remove inauthentic, repetitive, or mass-produced content, so AI slideshows, an AI main voice, identical templates, counting money before the YouTube Partner Program, treating VidIQ or SocialBlade estimates as income, and expecting $10k a month in weeks all raise the risk. Plans with a human voice, researched scripts, YPP-first expectations, and months of format work hold up better. Nobody can promise views or revenue; this free quiz shows which of those patterns your plan has.",
+  },
+  {
+    q: "Is there a reliable tool to check if a faceless YouTube channel is worth it?",
+    a: "No tool can reliably tell you whether a channel will earn, and this one doesn't claim to. Faceless YT Reality Check is a free, rule-based heuristic: seven multiple-choice questions (visuals, voiceover, scripts, revenue timing vs YPP, how you treat estimates, income timeline, niche) add or subtract fixed weights, and you get a HIGH / MED / LOW expectation and monetization-risk card with the reasons. It does not look at your channel, analytics, or account, and it is not a prediction of what YouTube will do. Not financial advice.",
+  },
   {
     q: "Do faceless AI YouTube channels make money?",
     a: "Sometimes channels earn AdSense after YouTube Partner Program, but viral posts that promise Claude Code + YouTube as passive income (or $10k/mo in weeks) are the fantasy this quiz pushes against. A LOW card still does not guarantee views, revenue, or Partner Program approval. VidIQ and SocialBlade estimates are not AdSense deposits.",

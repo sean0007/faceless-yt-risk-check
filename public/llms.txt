@@ -20,6 +20,11 @@ Questions it answers:
 - "Is there a free tool / API / MCP for a faceless YouTube reality check?" Yes: the quiz, /api/score (keyless), and MCP tool `faceless_youtube_reality_check`.
 FAQ (10 questions, also as FAQPage JSON-LD): https://faceless-yt-risk-check.vercel.app/#faq
 
+## Questions it answers
+- Is a faceless YouTube channel still worth it in 2026? It can be, but not as a passive-income shortcut: AI slideshows, AI main voice, identical templates, money before YPP, estimates-as-income, and $10k-in-weeks timelines raise risk; human voice, researched scripts, YPP-first plans, and months of craft hold up better. No guarantees.
+- Is there a reliable tool to check if a faceless YouTube channel is worth it? No tool can reliably predict earnings. This is a free rule-based heuristic risk check (seven multiple-choice answers, fixed weights, HIGH / MED / LOW card with reasons). It does not look at your channel or account and does not predict YouTube's decisions. Not financial advice.
+- Do faceless AI YouTube channels get demonetized? YouTube can limit inauthentic or mass-produced content; the quiz scores plan risk, not your account.
+
 ## Shareable result links
 Every result has its own URL. The link carries only the seven multiple-choice answers, with the same names and values as /api/score (the quiz has no free-text field). The page server-renders the same HIGH / MED / LOW card, signals, and myths, and has a 1200x630 preview card:
 - Result page: https://faceless-yt-risk-check.vercel.app/r?visual=ai_slideshow&voiceover=ai_voice&scripts=identical_template&revenueTiming=before_ypp&estimates=as_income&timeline=ten_k_fast&niche=broad_storytime
